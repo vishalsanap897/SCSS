@@ -1,0 +1,43 @@
+@import "mixinData";
+@import "variableData";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// 1) Operator
+// 2) variable
+// 3) Nesting = 
+// & - use to inherit child element
+// 4) mixin - use to give common property in one mixin
+// 5) parameter
+// 6) partial - use to store partial data in diff files
+
+
+
+.main_text {
+    @include content_data;
+    width: 100vw;
+    height: 100vh;
+
+    h2 {
+        @include tag_propery(1.5rem);
+
+        //font-size: 2rem - 1rem
+        //font-size: 2rem * 3rem
+        //font-size: 2rem / 2rem 
+        &:hover {
+            color: white;
+        }
+    }
+
+    p {
+        @include tag_propery(0.7rem);
+
+        &:hover {
+            color: yellow;
+        }
+    }
+}

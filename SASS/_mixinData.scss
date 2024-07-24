@@ -1,0 +1,14 @@
+
+@mixin content_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $bg-color;
+}
+
+@mixin tag_propery($parameter1) {
+    color: green;
+    font-size: 3rem + 2rem;
+    letter-spacing: $parameter1;
+}

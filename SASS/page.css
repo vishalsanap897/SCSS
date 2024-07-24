@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(206, 150, 150);
+  width: 100vw;
+  height: 100vh;
+}
+.main_text h2 {
+  color: green;
+  font-size: 5rem;
+  letter-spacing: 1.5rem;
+}
+.main_text h2:hover {
+  color: white;
+}
+.main_text p {
+  color: green;
+  font-size: 5rem;
+  letter-spacing: 0.7rem;
+}
+.main_text p:hover {
+  color: yellow;
+}/*# sourceMappingURL=page.css.map */
